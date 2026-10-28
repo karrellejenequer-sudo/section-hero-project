@@ -115,3 +115,59 @@ body {
     background-color: #70452e;
     transform: translateY(-2px);
 }
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 5%;
+    }
+
+    .navbar nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .navbar nav a {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .hero {
+        min-height: 75vh;
+        padding: 40px 5%;
+        background-position: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        gap: 16px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 21px;
+    }
+
+    .navbar nav {
+        gap: 12px;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-button {
+        padding: 12px 22px;
+    }
+}
+
