@@ -4,31 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Butter Bliss Bakery</title>
-	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header class="navbar">
+
         <div class="logo">
             Butter Bliss Bakery
         </div>
 
-        <nav>
+        <!-- Hamburger Menu -->
+        <button class="menu-toggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navbar-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav id="navbar-menu">
             <a href="#">Home</a>
             <a href="#">Products & Services</a>
             <a href="#">Pricing</a>
             <a href="#">About Us</a>
             <a href="#">Sign Up</a>
         </nav>
+
     </header>
 
     <section class="hero">
+
         <div class="hero-content">
             <h1>Delicious Cupcakes Made with Love</h1>
-            <p>Freshly baked cupcakes for every occasion.</p>
+
+            <p>
+                Freshly baked cupcakes for every occasion.
+            </p>
+
             <a href="#" class="hero-button">Order Now</a>
         </div>
+
     </section>
+
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navbarMenu = document.querySelector("#navbar-menu");
+
+        menuToggle.addEventListener("click", function () {
+            navbarMenu.classList.toggle("active");
+
+            const isOpen = navbarMenu.classList.contains("active");
+
+            menuToggle.setAttribute("aria-expanded", isOpen);
+            menuToggle.setAttribute(
+                "aria-label",
+                isOpen ? "Close navigation menu" : "Open navigation menu"
+            );
+        });
+    </script>
 
 </body>
 </html>
