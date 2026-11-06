@@ -198,44 +198,47 @@ body {
         font-size: 13px;
         padding: 9px 12px;
     }
-    .hero {
-        min-height: max(620px, calc(100svh - 62px));
+   .hero {
+    min-height: max(620px, calc(100svh - 62px));
 
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        padding: 280px 6% 38px;
+    padding: 220px 6% 60px;
 
-        background-size: auto 100%;
-        background-position: left center;
-        background-repeat: no-repeat;
-    }
-    .hero-content {
-        width: 100%;
-        max-width: 100%;
+    background-size: auto 100%;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
 
-        margin: 0;
-        gap: 12px;
+    .hero-content{
+    width: 100%;
+    max-width: 100%;
 
-        text-align: center;
-        justify-items: center;
-    }
-    .hero-content h1 {
-        font-size: 32px;
-        line-height: 1.15;
-    }
-    .hero-content p {
-        font-size: 14px;
-        line-height: 1.6;
-    }
-    .hero-button {
-        justify-self: center;
+    margin: 0;
+    gap: 12px;
 
-        margin-top: 8px;
-        padding: 13px 28px;
+    text-align: center;
+    justify-items: center;
+}
+   .hero-content h1 {
+    font-size: 32px;
+    line-height: 1.15;
+}
 
-        font-size: 14px;
-    }
+.hero-content p {
+    font-size: 14px;
+    line-height: 1.6;
+}
 
+   .hero-content h1 {
+    font-size: 32px;
+    line-height: 1.15;
+}
+
+.hero-content p {
+    font-size: 14px;
+    line-height: 1.6;
+}
 }
